@@ -7,8 +7,8 @@ resources:
     branch: master
     private_key: {{github-private-key}}
 
-- name:
-  type:  pal-tracker-artifactss3
+- name: pal-tracker-artifacts
+  type: s3
   source:
     bucket: {{aws-bucket}}
     regexp: releases/pal-tracker-(.*).jar
