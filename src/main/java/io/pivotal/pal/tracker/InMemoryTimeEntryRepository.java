@@ -36,6 +36,7 @@ public class InMemoryTimeEntryRepository implements TimeEntryRepository {
 
         timeEntries.put(id, updatedTimeEntry);
         return updatedTimeEntry;
+
         }
 
     @Override
