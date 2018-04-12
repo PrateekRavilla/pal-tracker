@@ -26,11 +26,10 @@ run:
      apt-get -y install mysql-server
      service mysql start
 
-
-    cd pal-tracker
+     cd pal-tracker
      mysql -uroot < databases/tracker/create_databases.sql
-    chmod +x gradlew
-    ./gradlew -P version=$(cat ../version/number) build ||  (service mysql stop && exit 1)
-    service mysql stop
+     chmod +x gradlew
+     ./gradlew -P version=$(cat ../version/number) build ||  (service mysql stop && exit 1)
+     service mysql stop
 
-    cp build/libs/pal-tracker-*.jar ../build-output
+     cp build/libs/pal-tracker-*.jar ../build-output
