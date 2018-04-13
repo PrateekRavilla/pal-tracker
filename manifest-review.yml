@@ -5,3 +5,4 @@ applications:
   host: psprateek-pal-tracker-review
   services:
   - tracker-database
+  SECURITY_FORCE_HTTPS: true
